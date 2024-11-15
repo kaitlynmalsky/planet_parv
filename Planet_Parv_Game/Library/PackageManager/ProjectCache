@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Packages/manifest.json
+    m_FilePath: C:/Users/amcna/OneDrive/Documents/CS576/planet_parv/Planet_Parv_Game/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638668738020000000
-    m_Hash: 3370452770
+      ticks: 638672352591364018
+    m_Hash: 699452014
   m_LockFileStatus:
-    m_FilePath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Packages/packages-lock.json
+    m_FilePath: C:/Users/amcna/OneDrive/Documents/CS576/planet_parv/Planet_Parv_Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638668738090000000
-    m_Hash: 3402792368
+      ticks: 638672353532199764
+    m_Hash: 3232805528
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Packages
-m_EditorVersion: 6000.0.23f1 (1c4764c07fb4)
+m_ProjectPath: C:/Users/amcna/OneDrive/Documents/CS576/planet_parv/Planet_Parv_Game/Packages
+m_EditorVersion: 2022.3.44f1 (c3ae09b9f03c)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@2.5.2
   testable: 0
   isDirectDependency: 1
   version: 2.5.2
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.collab-proxy
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.collab-proxy@2.5.2
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -40,6 +40,7 @@ m_ResolvedPackages:
   description: The package gives you the ability to use Unity Version Control in
     the Unity editor. To use Unity Version Control, a subscription is required. Learn
     more about how you can get started for free by visiting https://unity.com/solutions/version-control
+  status: 0
   errors: []
   versions:
     all:
@@ -119,8 +120,10 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     compatible:
+    - 2.4.4
+    - 2.5.1
     - 2.5.2
-    recommended: 2.5.2
+    recommended: 2.4.4
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -148,8 +151,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638630364536670000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.5/manual/index.html
@@ -160,31 +161,20 @@ m_ResolvedPackages:
     revision: c402e6396d3ea20ecb2d59eac908e7e0a30cd7e6
     path: 
   unityLifecycle:
-    version: 2.5.2
+    version: 2.4.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fix token renewal issue: Can''t obtain
-    a new token (Message: Invalid Refresh Token., Code: 132.104)"}'
-  assetStore:
-    productId: 
-  fingerprint: da7e55b87e08569f31766e7cabc37bc033c9c7f9
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.5.2
-    minimumUnityVersion: 2020.3.48f1
-- packageId: com.unity.feature.development@1.0.2
+  fingerprint: 
+- packageId: com.unity.feature.development@1.0.1
   testable: 0
   isDirectDependency: 1
-  version: 1.0.2
+  version: 1.0.1
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.feature.development
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.feature.development@1.0.1
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -198,18 +188,21 @@ m_ResolvedPackages:
     feature set. Enable support for multiple integrated development environments
     (IDE) for editing your Unity code. Get access to development tools to help you
     test and analyze your project\u2019s performance."
+  status: 0
   errors: []
   versions:
     all:
-    - 1.0.2
+    - 1.0.1
     compatible:
-    - 1.0.2
-    recommended: 1.0.2
+    - 1.0.1
+    recommended: 1.0.1
     deprecated: []
   dependencies:
   - name: com.unity.ide.visualstudio
     version: default
   - name: com.unity.ide.rider
+    version: default
+  - name: com.unity.ide.vscode
     version: default
   - name: com.unity.editorcoroutines
     version: default
@@ -223,15 +216,17 @@ m_ResolvedPackages:
   - name: com.unity.ide.visualstudio
     version: 2.0.22
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.1.33
   - name: com.unity.ext.nunit
-    version: 2.0.5
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
     version: 3.0.31
+  - name: com.unity.ide.vscode
+    version: 1.2.5
   - name: com.unity.editorcoroutines
     version: 1.0.0
   - name: com.unity.performance.profile-analyzer
@@ -250,8 +245,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -262,30 +255,20 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 1.0.2
+    version: 1.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"quickstart":"https://docs.unity3d.com/2021.2/Documentation/Manual/DeveloperToolsFeature.html"}'
-  assetStore:
-    productId: 
-  fingerprint: c770b6a36a30949b030c5ec02d835f771b975cbb
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.2
-    minimumUnityVersion: 
+  fingerprint: 
 - packageId: com.unity.inputsystem@1.11.1
   testable: 0
   isDirectDependency: 1
   version: 1.11.1
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.inputsystem
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.inputsystem@1.11.1
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -297,6 +280,7 @@ m_ResolvedPackages:
   type: 
   description: A new input system which can be used as a more extensible and customizable
     alternative to Unity's classic input system in UnityEngine.Input.
+  status: 0
   errors: []
   versions:
     all:
@@ -352,9 +336,18 @@ m_ResolvedPackages:
     - 1.11.1
     - 1.11.2
     compatible:
+    - 1.7.0
+    - 1.8.0-pre.1
+    - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.0
+    - 1.11.0
     - 1.11.1
     - 1.11.2
-    recommended: 1.11.2
+    recommended: 1.7.0
     deprecated: []
   dependencies:
   - name: com.unity.modules.uielements
@@ -367,8 +360,6 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.hierarchycore
     version: 1.0.0
   keywords:
   - input
@@ -388,8 +379,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638632824854080000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/index.html
@@ -400,137 +389,20 @@ m_ResolvedPackages:
     revision: 684a2848f24f4d45ffdf14900025ae9bb98c7dd8
     path: 
   unityLifecycle:
-    version: 1.11.1
+    version: 1.7.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed Multiple interactions could breaks
-    on Composite Binding. [ISXB-619](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-619)\n-
-    Fixed memory leak when the OnScreenStick component was destroyed [ISXB-1070](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1070).
-    Contribution by [LukeUnityDev](https://github.com/LukeUnityDev).\n- Fixed Action
-    Maps contextual menu in Action Editor UI that occasionally displays unrelated
-    items.\n- Fixed \"MissingReferenceException\" errors when closing an in-game
-    dropdown field [ISXB-1081](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1081).\n-
-    Fixed potential crash on Mac when using stale references to deleted InputDevice
-    objects [ISXB-606](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-606).\n-
-    Fixed conditional compilation for non-editor analytics on platforms not enabling
-    analytics.\n\n### Changed\n- Renamed editor Resources directories to PackageResources
-    to fix package validation warnings.\n- Changed representation of GamepadButton
-    enum values in Inspector to display aliased enum values as a single item to avoid
-    confusion around selection and aliased value display when multiple enum items
-    map to the same numerical value. [ISXB-543](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-543)\n-
-    PlayerInput component now warns if the system cannot find matching control scheme,
-    which can occur if all control schemes already paired (e.g. to other game objects
-    with PlayerInput components) [ISXB-1020](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1020)"}'
-  assetStore:
-    productId: 
-  fingerprint: f32e50d372b38a6a40f5382ad8ab0d11ac27b67d
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.11.1
-    minimumUnityVersion: 2019.4.0a1
-- packageId: com.unity.multiplayer.center@1.0.0
-  testable: 0
-  isDirectDependency: 1
-  version: 1.0.0
-  source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.multiplayer.center
-  assetPath: Packages/com.unity.multiplayer.center
-  name: com.unity.multiplayer.center
-  displayName: Multiplayer Center
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: The multiplayer center provides a starting point to create multiplayer
-    games. It will recommend specific packages and enable you to easily access integrations,
-    samples and documentation.
-  errors: []
-  versions:
-    all:
-    - 0.2.1
-    - 0.3.0
-    - 0.4.0
-    - 1.0.0-pre.1
-    - 1.0.0-pre.2
-    - 1.0.0-pre.3
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.hierarchycore
-    version: 1.0.0
-  keywords:
-  - Multiplayer
-  - Netcode
-  - Services
-  - Tools
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: b27203cbee4b0eb1910981fa8a1f299c8134b318
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 6000.0.0a1
+  fingerprint: 
 - packageId: com.unity.timeline@1.8.7
   testable: 0
   isDirectDependency: 1
   version: 1.8.7
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.timeline
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.timeline@1.8.7
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -542,6 +414,7 @@ m_ResolvedPackages:
   type: assets
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
+  status: 0
   errors: []
   versions:
     all:
@@ -632,8 +505,16 @@ m_ResolvedPackages:
     - 1.8.6
     - 1.8.7
     compatible:
+    - 1.7.6
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.5
+    - 1.8.6
     - 1.8.7
-    recommended: 1.8.7
+    recommended: 1.7.6
     deprecated: []
   dependencies:
   - name: com.unity.modules.audio
@@ -668,8 +549,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638524833900000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
@@ -680,40 +559,20 @@ m_ResolvedPackages:
     revision: d6432ca638481c3d0e4c01f87f9cdbe3c4b1d529
     path: 
   unityLifecycle:
-    version: 1.8.7
+    version: 1.7.6
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Added\n\n- Released ronl-workflow-custom-marker.md
-    Added a new workflow to the Timeline Workflows documentation:\n- Released ronl-workflow-custom-marker.md
-    The `Create a custom Notes marker` workflow demonstrates how to create a custom
-    marker for adding notes to Timeline instances. This workflow also demonstrates
-    how to change the default appearance of a custom marker with scripting and a
-    Unity Style Sheet (USS).\n\n### Fixed\n\n- Fixed bug where using , and . (<>)
-    to step frames in the Animation Window while the Timeline Window was linked would
-    sometimes not work. [IN-56667](https://unity3d.atlassian.net/servicedesk/customer/portal/2/IN-56667)\n-
-    When the Timeline and Animation windows are linked and the Timeline Window is
-    active, moving the playhead in the Timeline Window will cause the animation window
-    to repaint immediately."}'
-  assetStore:
-    productId: 
-  fingerprint: c58b4ee65782ad38338e29f7ee67787cb6998f04
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.8.7
-    minimumUnityVersion: 2019.3.0a1
-- packageId: com.unity.ugui@2.0.0
+  fingerprint: 
+- packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
-  version: 2.0.0
+  version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.ugui
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -727,19 +586,17 @@ m_ResolvedPackages:
     and applications. It is a GameObject-based UI system that uses Components and
     the Game View to arrange, position, and style user interfaces. \u200B You cannot
     use Unity UI to create or change user interfaces in the Unity Editor."
+  status: 0
   errors: []
   versions:
     all:
-    - 2.0.0
+    - 1.0.0
     - 3.0.0-exp.1
     - 3.0.0-exp.3
     - 3.0.0-exp.4
     compatible:
-    - 2.0.0
-    - 3.0.0-exp.1
-    - 3.0.0-exp.3
-    - 3.0.0-exp.4
-    recommended: 2.0.0
+    - 1.0.0
+    recommended: 1.0.0
     deprecated: []
   dependencies:
   - name: com.unity.modules.ui
@@ -756,11 +613,6 @@ m_ResolvedPackages:
   - ugui
   - Unity UI
   - Canvas
-  - TextMeshPro
-  - TextMesh Pro
-  - Text
-  - TMP
-  - SDF
   registry:
     id: main
     name: 
@@ -770,8 +622,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -782,30 +632,20 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 2.0.0
+    version: 1.0.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 8f98c6a1c75e66adfac0fb4351d51a0b4d92c018
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.0.0
-    minimumUnityVersion: 2019.2.0a1
+  fingerprint: 
 - packageId: com.unity.visualscripting@1.9.4
   testable: 0
   isDirectDependency: 1
   version: 1.9.4
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.visualscripting
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.visualscripting@1.9.4
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -827,6 +667,7 @@ m_ResolvedPackages:
 
     Visual scripting is compatible with third-party
     APIs, including most packages, assets and custom libraries.'
+  status: 0
   errors: []
   versions:
     all:
@@ -865,7 +706,7 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.ugui
-    version: 2.0.0
+    version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
@@ -882,8 +723,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638488567680000000
   documentationUrl: 
@@ -901,91 +740,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed sqlite dll changes not being recognized
-    correctly by the 2022.3 Unity Editor"}'
-  assetStore:
-    productId: 
-  fingerprint: 0920df93f9574f857a55af27bd38fdd9230a3f51
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.9.4
-    minimumUnityVersion: 2021.3.0a1
-- packageId: com.unity.modules.accessibility@1.0.0
-  testable: 0
-  isDirectDependency: 1
-  version: 1.0.0
-  source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.accessibility
-  assetPath: Packages/com.unity.modules.accessibility
-  name: com.unity.modules.accessibility
-  displayName: Accessibility
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: module
-  description: 'The Accessibility module includes utilities to facilitate the development
-    of accessible user experiences in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AccessibilityModule.html'
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.ai
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.ai@1.0.0
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -997,6 +758,7 @@ m_ResolvedPackages:
   type: module
   description: 'The AI module implements the path finding features in Unity. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1017,8 +779,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1036,23 +796,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.androidjni
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.androidjni@1.0.0
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1063,6 +813,7 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'AndroidJNI module allows you to call Java code. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1083,8 +834,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1102,23 +851,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.animation
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.animation@1.0.0
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1130,6 +869,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Animation module implements Unity''s animation system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1150,8 +890,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1169,23 +907,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.assetbundle
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1197,6 +925,7 @@ m_ResolvedPackages:
   type: module
   description: 'The AssetBundle module implements the AssetBundle class and related
     APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1217,8 +946,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1236,23 +963,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.audio
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.audio@1.0.0
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1264,6 +981,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Audio module implements Unity''s audio system. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.AudioModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1284,8 +1002,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1303,23 +1019,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.cloth
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.cloth@1.0.0
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1331,6 +1037,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Cloth module implements cloth physics simulation through the
     Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1355,8 +1062,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1374,23 +1079,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.director
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.director@1.0.0
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1402,6 +1097,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Director module implements the PlayableDirector class. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.DirectorModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1430,8 +1126,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1449,23 +1143,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.imageconversion
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1476,7 +1160,9 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'The ImageConversion module implements the ImageConversion class which
-    provides helper methods for converting image data. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
+    provides helper methods to convert images from and to PNG, JPEG or EXR formats.
+    Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1497,8 +1183,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1516,23 +1200,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.imgui
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.imgui@1.0.0
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1544,6 +1218,7 @@ m_ResolvedPackages:
   type: module
   description: 'The IMGUI module provides Unity''s immediate mode GUI solution for
     creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1564,8 +1239,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1583,23 +1256,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.jsonserialize
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1611,6 +1274,7 @@ m_ResolvedPackages:
   type: module
   description: 'The JSONSerialize module provides the JsonUtility class which lets
     you serialize Unity Objects to JSON format. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.JSONSerializeModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1631,8 +1295,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1650,23 +1312,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.particlesystem
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1678,6 +1330,7 @@ m_ResolvedPackages:
   type: module
   description: 'The ParticleSystem module implements Unity''s Particle System. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.ParticleSystemModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1698,8 +1351,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1717,23 +1368,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.physics
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.physics@1.0.0
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1745,6 +1386,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics module implements 3D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.PhysicsModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1765,8 +1407,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1784,23 +1424,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.physics2d
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.physics2d@1.0.0
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1812,6 +1442,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics2d module implements 2D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.Physics2DModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1832,8 +1463,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1851,23 +1480,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.screencapture
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.screencapture@1.0.0
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1879,6 +1498,7 @@ m_ResolvedPackages:
   type: module
   description: 'The ScreenCapture module provides functionality to take screen shots
     using the ScreenCapture class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ScreenCaptureModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1903,8 +1523,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1922,23 +1540,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.terrain
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.terrain@1.0.0
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1950,6 +1558,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Terrain module implements Unity''s Terrain rendering engine available
     through the Terrain component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -1970,8 +1579,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1989,23 +1596,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.terrainphysics
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -2017,6 +1614,7 @@ m_ResolvedPackages:
   type: module
   description: 'The TerrainPhysics module connects the Terrain and Physics modules
     by implementing the TerrainCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainPhysicsModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2045,8 +1643,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2064,23 +1660,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.tilemap
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.tilemap@1.0.0
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -2091,6 +1677,7 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'The Tilemap module implements the Tilemap class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TilemapModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2115,8 +1702,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2134,23 +1719,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.ui
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.ui@1.0.0
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2162,6 +1737,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UI module implements basic components required for Unity''s UI
     system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2182,8 +1758,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2201,23 +1775,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.uielements
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.uielements@1.0.0
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2229,6 +1793,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UIElements module implements the UIElements retained mode UI
     framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2244,16 +1809,12 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
-  - name: com.unity.modules.hierarchycore
-    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.hierarchycore
     version: 1.0.0
   keywords: []
   registry:
@@ -2265,8 +1826,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2284,23 +1843,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.umbra
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.umbra@1.0.0
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2312,6 +1861,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Umbra module implements Unity''s occlusion culling system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.UmbraModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2332,8 +1882,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2351,23 +1899,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.unityanalytics
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2377,7 +1915,9 @@ m_ResolvedPackages:
     url: 
   category: 
   type: module
-  description: 
+  description: 'The UnityAnalytics module implements APIs required to use Unity Analytics.
+    Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityAnalyticsModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2406,8 +1946,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2425,23 +1963,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.unitywebrequest
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2453,6 +1981,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequest module lets you communicate with http services.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2473,8 +2002,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2492,23 +2019,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2520,6 +2037,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAssetBundle module provides the DownloadHandlerAssetBundle
     class to use UnityWebRequest to download Asset Bundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAssetBundleModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2548,8 +2066,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2567,23 +2083,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.unitywebrequestaudio
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2595,6 +2101,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAudio module provides the DownloadHandlerAudioClip
     class to use UnityWebRequest to download AudioClips. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAudioModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2623,8 +2130,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2642,23 +2147,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.unitywebrequesttexture
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2670,6 +2165,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestTexture module provides the DownloadHandlerTexture
     class to use UnityWebRequest to download Textures. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestTextureModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2698,8 +2194,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2717,23 +2211,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.unitywebrequestwww
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2745,6 +2229,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestWWW module implements the legacy WWW lets you
     communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestWWWModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2789,8 +2274,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2808,23 +2291,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.vehicles
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.vehicles@1.0.0
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2836,6 +2309,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Vehicles module implements vehicle physics simulation through
     the WheelCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VehiclesModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2860,8 +2334,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2879,23 +2351,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.video
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.video@1.0.0
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2907,6 +2369,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Video module lets you play back video files in your content.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VideoModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -2939,8 +2402,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2958,23 +2419,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.vr
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.vr@1.0.0
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2986,6 +2437,7 @@ m_ResolvedPackages:
   type: module
   description: 'The VR module implements support for virtual reality devices in Unity.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -3020,8 +2472,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3039,23 +2489,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.wind
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.wind@1.0.0
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -3067,6 +2507,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Wind module implements the WindZone component which can affect
     terrain rendering and particle simulations. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.WindModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -3087,8 +2528,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3106,23 +2545,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.xr
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.xr@1.0.0
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -3134,6 +2563,7 @@ m_ResolvedPackages:
   type: module
   description: 'The XR module contains the VR and AR related platform support functionality.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.XRModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -3166,8 +2596,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3185,23 +2613,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.subsystems
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.modules.subsystems@1.0.0
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -3213,6 +2631,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Subsystem module contains the definitions and runtime support
     for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
+  status: 0
   errors: []
   versions:
     all:
@@ -3237,8 +2656,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3256,90 +2673,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
   fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
-- packageId: com.unity.modules.hierarchycore@1.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.0
-  source: 2
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.modules.hierarchycore
-  assetPath: Packages/com.unity.modules.hierarchycore
-  name: com.unity.modules.hierarchycore
-  displayName: Hierarchy Core
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: module
-  description: 'Module that contains a high-performance hierarchy container. Scripting
-    API: https://docs.unity3d.com/ScriptReference/UnityEngine.HierarchyCoreModule.html'
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
 - packageId: com.unity.ide.visualstudio@2.0.22
   testable: 0
   isDirectDependency: 0
   version: 2.0.22
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.ide.visualstudio
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -3352,6 +2692,7 @@ m_ResolvedPackages:
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
+  status: 0
   errors: []
   versions:
     all:
@@ -3388,9 +2729,9 @@ m_ResolvedPackages:
     version: 1.1.9
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.1.33
   - name: com.unity.ext.nunit
-    version: 2.0.5
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -3405,8 +2746,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638326061910000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
@@ -3424,28 +2763,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"Integration:\n\n- Add support for `XDG_DATA_DIRS` and
-    `.desktop` files on Linux for `VS Code` discovery.\n- Use compile-time platform-specifics
-    instead of using runtime conditions.\n\nProject generation:\n\n- Suppress `USG0001`
-    warnings.\n- Mark referenced assemblies as private (to not copy extra files to
-    output directory when building).\n- Add Unity capability to SDK-Style projects.\n-
-    Prevent circular dependency errors with SDK-Style projects."}'
-  assetStore:
-    productId: 
-  fingerprint: 8140e851d83e922ca2021b04a89519de94ebe38c
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.0.22
-    minimumUnityVersion: 2019.4.25f1
+  fingerprint: 
 - packageId: com.unity.ide.rider@3.0.31
   testable: 0
   isDirectDependency: 0
   version: 3.0.31
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.ide.rider
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.ide.rider@3.0.31
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -3458,6 +2782,7 @@ m_ResolvedPackages:
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
+  status: 0
   errors: []
   versions:
     all:
@@ -3515,7 +2840,7 @@ m_ResolvedPackages:
     version: 1.0.6
   resolvedDependencies:
   - name: com.unity.ext.nunit
-    version: 2.0.5
+    version: 1.0.6
   keywords: []
   registry:
     id: main
@@ -3526,8 +2851,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638548308080000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
@@ -3545,26 +2868,82 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"fix RIDER-104519 Rider is reporting errors in scripts
-    that work fine in Unity when utilizing DOTS - when Player project, by generating
-    projects for all assemblies in \"com.unity.entities\", \"com.unity.collections\"\nfix
-    RIDER-111622 Unity Rider package is not compatible with Rider Dev builds"}'
-  assetStore:
-    productId: 
-  fingerprint: 7921be93db40ec070fcb01ed82d1c3df1bbdddcd
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 3.0.31
-    minimumUnityVersion: 2019.2.6f1
+  fingerprint: 
+- packageId: com.unity.ide.vscode@1.2.5
+  testable: 0
+  isDirectDependency: 0
+  version: 1.2.5
+  source: 1
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  assetPath: Packages/com.unity.ide.vscode
+  name: com.unity.ide.vscode
+  displayName: Visual Studio Code Editor
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Code editor integration for supporting Visual Studio Code as code
+    editor for unity. Adds support for generating csproj files for intellisense purposes,
+    auto discovery of installations, etc.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.2
+    - 1.0.3
+    - 1.0.7
+    - 1.1.0
+    - 1.1.2
+    - 1.1.3
+    - 1.1.4
+    - 1.2.0
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
+    - 1.2.4
+    - 1.2.5
+    compatible:
+    - 1.2.5
+    recommended: 1.2.5
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637800255360000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
+    revision: b0740c80bfc2440527c317109f7c3d9100132722
+    path: 
+  unityLifecycle:
+    version: 1.2.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.editorcoroutines@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.editorcoroutines
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.editorcoroutines@1.0.0
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -3577,6 +2956,7 @@ m_ResolvedPackages:
   description: 'The editor coroutines package allows developers to start constructs
     similar to Unity''s monobehaviour based coroutines within the editor using abitrary
     objects. '
+  status: 0
   errors: []
   versions:
     all:
@@ -3606,8 +2986,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637232611380000000
   documentationUrl: 
@@ -3625,23 +3003,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 2018.1.0a1
+  fingerprint: 
 - packageId: com.unity.performance.profile-analyzer@1.2.2
   testable: 0
   isDirectDependency: 0
   version: 1.2.2
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.performance.profile-analyzer
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -3656,6 +3024,7 @@ m_ResolvedPackages:
     in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
     set of Profiler CPU data \n\u25AA Comparison of two multi-frame profile scans
     \n\n"
+  status: 0
   errors: []
   versions:
     all:
@@ -3689,8 +3058,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638108624620000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.2/manual/index.html
@@ -3708,24 +3075,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n* Fixed exception thrown when removing
-    marker."}'
-  assetStore:
-    productId: 
-  fingerprint: fe7acfd2717a98ded6ddc33be6b2ebe4459a2add
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.2.2
-    minimumUnityVersion: 2020.3.0a1
-- packageId: com.unity.test-framework@1.4.5
+  fingerprint: 
+- packageId: com.unity.test-framework@1.1.33
   testable: 0
   isDirectDependency: 0
-  version: 1.4.5
+  version: 1.1.33
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.test-framework
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.test-framework@1.1.33
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -3734,8 +3090,9 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Unity Test Framework
-  type: assets
+  type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
+  status: 0
   errors: []
   versions:
     all:
@@ -3793,23 +3150,38 @@ m_ResolvedPackages:
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
+    - 1.1.33
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
     - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    recommended: 1.4.5
+    recommended: 1.1.33
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
-    version: 2.0.3
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.ext.nunit
-    version: 2.0.5
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -3826,69 +3198,30 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638575054880000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/index.html
+  datePublishedTicks: 637938212700000000
+  documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: e50747c90fb18ab9f4f350b60d0fcdcae19bdebc
+    revision: 34a4d423d64926635eb36d3bb86276179cc186e1
     path: 
   unityLifecycle:
-    version: 1.4.5
+    version: 1.1.33
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"- Fixed an issue where batchmode test runs would never
-    finish if a test yielded WaitForEndOfFrame (DSTR-1009).\n- Fixed an issue where
-    the location prompt was required when using the Install all tests in ''build''
-    folder option during test builds.\n- Canceling a PlayMode test run now correctly
-    restores the scene setup, instead of leaving the editor in the test scene.\n-
-    Fixed an issue where UnitySetUp did not fail when nested coroutines threw an
-    exception (DSTR-1007).\n- When selecting multiple tests and running them, the
-    test runner now correctly updates the details of the first selected test (UTF-602).\n-
-    The interaction mode and application idle time settings is now being changes
-    when running tests, resulting in faster test runs if not already in use (applies
-    to 2020.3 and later) (DSTR-690).\n- Fixed an issue where some NUnit attributes
-    caused errors and stopped async test runs (DSTR-1040).\n- Added support for the
-    MaxTime attribute on async and UnityTest methods (DSTR-1040).\n- Fixed a memory
-    leak issue where a large number of domain reloads within the same test could
-    crash the editor (DSTR-1023).\n- Changed to use a progress bar inside the test
-    runner window when running tests. This ensures that the progress bar is not fighting
-    to display when e.g. compiling scripts and also makes it easier to cancel a run.
-    This progress bar is displayed for all types of runs (EditMode, PlayMode and
-    Player). (UTF-596).\n- Fixed an issue where ignored tests with an attributes
-    did not display the ignore reason in the test runner UI.\n- Having multiple tests
-    with the same unique id no longer gives a error with ''An item with the same
-    key has already been added'', but instead logs an warning about the duplicate
-    id.\n- The result icons for test suites should no longer flicker when running
-    tests.\n- Ensured that test results ignored in the editor but run on a player
-    are not overwritten with ignore status when shown in the UI (DSTR-1042).\n- Fixed
-    an issue where the RunStarted event was not invoked correctly during a test run
-    (DSTR-1046).\n- Fixed an issue where TestStarted and TestFinished events were
-    repeated for ignored test fixtures after a domain reload (DSTR-986)."}'
-  assetStore:
-    productId: 
-  fingerprint: 0a21eb82d95cd331643a1e0ce4e8e9a5f18954c8
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.4.5
-    minimumUnityVersion: 2019.4.0a10
+  fingerprint: 
 - packageId: com.unity.testtools.codecoverage@1.2.6
   testable: 0
   isDirectDependency: 0
   version: 1.2.6
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.testtools.codecoverage
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.testtools.codecoverage@1.2.6
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -3902,6 +3235,7 @@ m_ResolvedPackages:
     automated tests. Additionally, the Code Coverage package offers a Coverage Recording
     feature which allows capturing coverage data on demand, for manual testing or
     when there are no automated tests in the project.
+  status: 0
   errors: []
   versions:
     all:
@@ -3948,9 +3282,9 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.1.33
   - name: com.unity.ext.nunit
-    version: 2.0.5
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -3971,8 +3305,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638575857900000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
@@ -3990,28 +3322,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixes\n- Documentation: Fixed formatting in [Using
-    Code Coverage in batchmode](https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/CoverageBatchmode.html)
-    page (case [COV-40](https://issuetracker.unity3d.com/issues/docs-formatting-in-using-code-coverage-in-batchmode-docs-page-is-incorrect)).\n-
-    Removed the references to the deprecated FindObjectOfType method in the *Asteroids
-    sample project* (case [COV-42](https://issuetracker.unity3d.com/issues/sample-project-is-using-obsolete-findobjectoftype-method-which-causes-multiple-warnings-in-console-when-it-is-imported)).\n-
-    Added missing logs for the ReportGenerator (case [COV-46](https://issuetracker.unity3d.com/issues/code-coverage-package-does-not-report-some-of-the-internal-reportgenerator-errors))."}'
-  assetStore:
-    productId: 
-  fingerprint: 205a02cbcb39584f20b51c49b853047aceb3a3a7
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.2.6
-    minimumUnityVersion: 2019.3.0a1
+  fingerprint: 
 - packageId: com.unity.settings-manager@2.0.1
   testable: 0
   isDirectDependency: 0
   version: 2.0.1
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.settings-manager
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.settings-manager@2.0.1
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -4023,6 +3340,7 @@ m_ResolvedPackages:
   type: asset
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
+  status: 0
   errors: []
   versions:
     all:
@@ -4050,8 +3368,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637744099390000000
   documentationUrl: 
@@ -4069,23 +3385,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 56a930affa1e4462d3595b5c19a1c2a4bf2015d2
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.0.1
-    minimumUnityVersion: 2018.4.0a1
-- packageId: com.unity.ext.nunit@2.0.5
+  fingerprint: 
+- packageId: com.unity.ext.nunit@1.0.6
   testable: 0
   isDirectDependency: 0
-  version: 2.0.5
+  version: 1.0.6
   source: 1
-  resolvedPath: /Users/kaitlyn/School/Fall2024/CS576/planet_parv/Planet_Parv_Game/Library/PackageCache/com.unity.ext.nunit
+  resolvedPath: C:\Users\amcna\OneDrive\Documents\CS576\planet_parv\Planet_Parv_Game\Library\PackageCache\com.unity.ext.nunit@1.0.6
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -4094,9 +3400,10 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Libraries
-  type: assets
-  description: A custom version of NUnit used by Unity Test Framework. Based on NUnit
-    version 3.5 and works with all platforms, il2cpp and Mono AOT.
+  type: asset
+  description: Custom version of the nunit package build to work with Unity. Used
+    by the Unity Test Framework.
+  status: 0
   errors: []
   versions:
     all:
@@ -4111,8 +3418,12 @@ m_ResolvedPackages:
     - 2.0.4
     - 2.0.5
     compatible:
+    - 1.0.6
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
     - 2.0.5
-    recommended: 2.0.5
+    recommended: 1.0.6
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -4129,34 +3440,22 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638236642220000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ext.nunit@2.0/manual/index.html
+  datePublishedTicks: 637429759280000000
+  documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
-    revision: 469fe0d46bfc26fbb32a53885ca4d12abcdae4ae
+    revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
     path: 
   unityLifecycle:
-    version: 2.0.5
+    version: 1.0.6
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"- Fixing bug for InstanceID as struct changes"}'
-  assetStore:
-    productId: 
-  fingerprint: 60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.0.5
-    minimumUnityVersion: 2019.4.0a1
-m_BuiltInPackagesHash: 4f75c37d7db9cb7d9b9c9879cb839d8c6f4a1918
+  fingerprint: 
+m_BuiltInPackagesHash: 74622aa8bed6a1f01bcf171663fedac871fbad9b
