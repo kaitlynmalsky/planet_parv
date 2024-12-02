@@ -59,4 +59,9 @@ public class RoverFollowsPlayer : MonoBehaviour
             }
         }
     }
+
+    public bool IsRoverFollowingPlayer()
+    {
+        return roverShouldFollowPlayer;
+    }
 }
