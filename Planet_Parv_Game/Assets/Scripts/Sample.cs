@@ -10,6 +10,8 @@ public class Sample : MonoBehaviour
     public GameObject sampleCanvas;
     public Text sampleText;
     public RoverFollowsPlayer roverScript;
+    public GameObject DialogCanvas;
+    public Text DialogText;
 
     private float interactionRange = 10.0f;
     
@@ -32,6 +34,9 @@ public class Sample : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     Destroy(sample);
+                    sampleCanvas.SetActive(false);
+                    DialogText.text = "Drops some facts about the sample and about mars.";
+                    DialogCanvas.SetActive(true);
                 }
             }
             else
