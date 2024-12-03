@@ -41,7 +41,7 @@ public class CharacterControllerScript : MonoBehaviour
 
 
             float velocity_no_y = new Vector3(controller.velocity.x, 0, controller.velocity.z).magnitude;
-            Debug.Log(velocity_no_y);
+            //Debug.Log(velocity_no_y);
 
             animation_controller.SetBool("facing_forward", isGoingForward());
             animation_controller.SetFloat("speed", velocity_no_y);
