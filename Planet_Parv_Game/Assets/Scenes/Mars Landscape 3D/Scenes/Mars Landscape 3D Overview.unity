@@ -8756,6 +8756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Astronaut.002
       objectReference: {fileID: 0}
+    - target: {fileID: 8308803221419169604, guid: 0254c68c664924d168e09c0428e51c33, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3a2ce9f07eafc4025913408b73972a35, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
