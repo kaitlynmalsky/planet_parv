@@ -4,20 +4,21 @@ using UnityEngine;
 
 namespace MimicSpace
 {
-    /// <summary>
-    /// This is a very basic movement script, if you want to replace it
-    /// Just don't forget to update the Mimic's velocity vector with a Vector3(x, 0, z)
-    /// </summary>
     public class Movement : MonoBehaviour
     {
         [Header("Controls")]
         [Tooltip("Body Height from ground")]
         [Range(0.5f, 5f)]
         public float height = 0.8f;
-        public float speed = 5f;
+        public float speed = 1f;
         Vector3 velocity = Vector3.zero;
-        public float velocityLerpCoef = 4f;
+        public float velocityLerpCoef = 1f;
         Mimic myMimic;
+
+        //player for the mimic to follow around
+        public Transform player;
+        public float mimicSpeedMultiplier = 0.3f; //how much slower the mimic is in comparison to the player
+        public MonoBehaviour astronautMovementScript; //reference to astronaut mover script
 
         private void Start()
         {
@@ -26,18 +27,62 @@ namespace MimicSpace
 
         void Update()
         {
-            velocity = Vector3.Lerp(velocity, new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized * speed, velocityLerpCoef * Time.deltaTime);
+            if (player != null)
+            {   
+                //find velocity vector that moves towards player
+                Vector3 directionToPlayer = (player.position - transform.position).normalized;
+                velocity = Vector3.Lerp(velocity, directionToPlayer * speed * mimicSpeedMultiplier, velocityLerpCoef * Time.deltaTime);
+                myMimic.velocity = velocity;
 
-            // Assigning velocity to the mimic to assure great leg placement
-            myMimic.velocity = velocity;
+                //move according to the velocity
+                transform.position = transform.position + velocity * Time.deltaTime;
 
-            transform.position = transform.position + velocity * Time.deltaTime;
-            RaycastHit hit;
-            Vector3 destHeight = transform.position;
-            if (Physics.Raycast(transform.position + Vector3.up * 5f, -Vector3.up, out hit))
-                destHeight = new Vector3(transform.position.x, hit.point.y + height, transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, destHeight, velocityLerpCoef * Time.deltaTime);
+                //original code to adjust height from the prefab
+                RaycastHit hit;
+                Vector3 destHeight = transform.position;
+                if (Physics.Raycast(transform.position + Vector3.up * 5f, -Vector3.up, out hit))
+                    destHeight = new Vector3(transform.position.x, hit.point.y + height, transform.position.z);
+
+                //lerp to smooth transition
+                transform.position = Vector3.Lerp(transform.position, destHeight, velocityLerpCoef * Time.deltaTime);
+
+                //if mimic reaches player, destroy it and deal damage (TODO)
+                //i set to 0.7 because the distance is never < 0.6 because of the height of the mimic
+                if (Vector3.Distance(transform.position, player.position) <= 0.7f)
+                {
+                    Debug.Log("DIE");
+                    //cute lil attack animation (just bounce up and down lol)
+                    StartCoroutine(Attack());
+                }
+            }
+        }
+
+        //coroutine for attacking
+        private IEnumerator Attack()
+        {
+            Vector3 originalPosition = transform.position;
+            float bounceHeight = 1f;
+            float bounceDuration = 0.5f;
+
+            //freeze the player so the attack may happen
+            if (astronautMovementScript != null) {
+                astronautMovementScript.enabled = false;
+            }
+
+            //bouncy
+            for (float t = 0; t < bounceDuration; t += Time.deltaTime) {
+                float lerpValue = Mathf.PingPong(t * 10f, bounceHeight); 
+                transform.position = new Vector3(originalPosition.x, originalPosition.y + lerpValue, originalPosition.z);
+                yield return null;
+            }
+
+            //destroy the mimic after attack
+            //Destroy(gameObject);
+
+            //unfreeze the player after the attack
+            if (astronautMovementScript != null) {
+                astronautMovementScript.enabled = true;
+            }
         }
     }
-
 }
