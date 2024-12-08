@@ -77,7 +77,7 @@ namespace MimicSpace
             }
 
             //destroy the mimic after attack
-            //Destroy(gameObject);
+            Destroy(gameObject);
 
             //unfreeze the player after the attack
             if (astronautMovementScript != null) {
