@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Mars Landscape 3D/Scenes/Mars Landscape 3D Overview.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
