@@ -46,14 +46,6 @@ public class CharacterControllerScript : MonoBehaviour
             animation_controller.SetBool("facing_forward", isGoingForward());
             animation_controller.SetFloat("speed", velocity_no_y);
 
-            if (Mathf.Abs(z) == 0.00)
-            {
-                animation_controller.SetBool("is_walking", false);
-            }
-            else
-            {
-                animation_controller.SetBool("is_walking", true);
-            }
             bool isGoingForward()
             {
                 return (moveDir.x < 0 && transform.forward.x < 0) || (moveDir.x > 0 && transform.forward.x > 0);
