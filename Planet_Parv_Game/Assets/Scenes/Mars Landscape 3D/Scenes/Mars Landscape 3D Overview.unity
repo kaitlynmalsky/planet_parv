@@ -1032,7 +1032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 371113297632144545, guid: fb9f44026c6cb46d985f0e74b3ac73fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 371113297632144545, guid: fb9f44026c6cb46d985f0e74b3ac73fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9868,6 +9868,10 @@ MonoBehaviour:
   - {fileID: 850668750}
   - {fileID: 1636349089}
   - {fileID: 352782635}
+  - {fileID: 1095141392}
+  - {fileID: 1089409964}
+  - {fileID: 266383320}
+  - {fileID: 780214120}
 --- !u!1 &1970985981
 GameObject:
   m_ObjectHideFlags: 0
