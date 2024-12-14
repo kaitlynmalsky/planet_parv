@@ -413,6 +413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartCanvas: {fileID: 1505064224}
   DialogCanvas: {fileID: 392292272}
+  SpiderFirstEncounterCanvas: {fileID: 1230422501}
   DialogText: {fileID: 51558270}
 --- !u!4 &78898146
 Transform:

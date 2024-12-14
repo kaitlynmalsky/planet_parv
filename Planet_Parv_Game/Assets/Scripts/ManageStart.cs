@@ -33,5 +33,6 @@ public class ManageStart : MonoBehaviour
     {
         DialogCanvas.SetActive(false);
         SpiderFirstEncounterCanvas.SetActive(false);
+        Time.timeScale = 1;
     }
 }

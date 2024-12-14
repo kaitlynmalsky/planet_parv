@@ -39,6 +39,7 @@ namespace MimicSpace
                 Debug.Log("Saw Spider AHJH");
                 following = true;
                 SpiderFirstEncounterCanvas.SetActive(true);
+                StartCoroutine(FreezeGameAfterDelay());
             }
 
             if (following && player != null)
@@ -97,6 +98,13 @@ namespace MimicSpace
             if (astronautMovementScript != null) {
                 astronautMovementScript.enabled = true;
             }
+        }
+
+        //coroutine for freezing the game when the spider explaination pops up
+        IEnumerator FreezeGameAfterDelay()
+        {
+            yield return new WaitForSecondsRealtime(1);
+            Time.timeScale = 0;
         }
     }
 }
