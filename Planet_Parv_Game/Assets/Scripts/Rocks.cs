@@ -14,7 +14,8 @@ public class Rocks : MonoBehaviour
         {
             GameObject rockPrefab = terrainData.treePrototypes[rock.prototypeIndex].prefab;
             Vector3 position = Vector3.Scale(rock.position, terrainData.size) + marsTerrain.transform.position;
-            Instantiate(rockPrefab, position, Quaternion.identity, marsTerrain.transform);
+            GameObject rockGameObject = Instantiate(rockPrefab, position, Quaternion.identity, marsTerrain.transform); // stored the rock's object in case something needs to be added to it later
+            rockGameObject.tag = "Rock"; // like this :)
         }
     }
 }

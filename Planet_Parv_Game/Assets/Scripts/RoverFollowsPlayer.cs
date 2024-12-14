@@ -16,6 +16,7 @@ public class RoverFollowsPlayer : MonoBehaviour
     private float rotationSpeed = 5.0f;
     private bool roverShouldFollowPlayer = false;
     private float interactionRange = 10.0f;
+    private float avoidRockRange = 2.5f;
 
     void Start()
     {
@@ -54,12 +55,67 @@ public class RoverFollowsPlayer : MonoBehaviour
             // If the rover is close to player, stop moving
             if (distToPlayer > stopDistance)
             {
+                // initiate target rotation
+                Quaternion targetRotation;
+
+
+                // check if rover is looking at rock
+                Ray rockRay = new(transform.position, transform.forward);
+
+                // If the rover is looking at a rock, then find a better direction
+                if (Physics.SphereCast(rockRay, 1.0f, out RaycastHit rockHit, avoidRockRange) && rockHit.collider.CompareTag("Rock"))
+                {
+                    Debug.Log("rockRay has found a rock!");
+                    Vector3 seekDirectionPos = transform.forward;
+                    Vector3 seekDirectionNeg = transform.forward;
+                    bool pathClear = false;
+                    int positiveRotations = 0;
+                    int negativeRotations = 0;
+
+                    // First, try rotating towards positive y and count rotations
+                    while (!pathClear && positiveRotations < 180)
+                    {
+                        seekDirectionPos.y++;
+                        rockRay = new Ray(transform.position, seekDirectionPos);
+                        if (!(Physics.SphereCast(rockRay, 1.0f, out rockHit, avoidRockRange) && rockHit.collider.CompareTag("Rock")))
+                        {
+                            pathClear = true;
+                        }
+                        positiveRotations++;
+                    }
+
+                    // reset this to search again with negative y rotation
+                    pathClear = false;
+                    while (!pathClear && negativeRotations < 180)
+                    {
+                        seekDirectionNeg.y--;
+                        rockRay = new Ray(transform.position, seekDirectionNeg);
+                        if (!(Physics.SphereCast(rockRay, 1.0f, out rockHit, avoidRockRange) && rockHit.collider.CompareTag("Rock")))
+                        {
+                            pathClear = true;
+                        }
+                        negativeRotations++;
+                    }
+
+                    // Then, choose the direction that is less work
+                    targetRotation = (positiveRotations <= negativeRotations)
+                        ? Quaternion.Euler(seekDirectionPos.x, seekDirectionPos.y, seekDirectionPos.z)
+                        : Quaternion.Euler(seekDirectionNeg.x, seekDirectionNeg.y, seekDirectionNeg.z);
+                }
+                // If the rover isn't looking at a rock, target the player
+                else
+                {
+                    // rotate rover toward player
+                    targetRotation = Quaternion.LookRotation(player.position - transform.position);
+                }
+
+
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
                 // move rover toward player
                 transform.position += transform.forward * speed * Time.deltaTime;
 
-                // rotate rover toward player
-                Quaternion targetRotation = Quaternion.LookRotation(player.position - transform.position);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
             }
         }
     }
@@ -67,5 +123,24 @@ public class RoverFollowsPlayer : MonoBehaviour
     public bool IsRoverFollowingPlayer()
     {
         return roverShouldFollowPlayer;
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        //Check for a match with the specified name on any GameObject that collides with your GameObject
+        if (collision.gameObject.name == "MyGameObjectName")
+        {
+            //If the GameObject's name matches the one you suggest, output this message in the console
+            Debug.Log("Do something here");
+        }
+
+        //Check for a match with the specific tag on any GameObject that collides with your GameObject
+        if (collision.gameObject.tag == "MyGameObjectTag")
+        {
+            //If the GameObject has the same tag as specified, output this message in the console
+            Debug.Log("Do something else here");
+        }
+
+        Debug.Log("collision detected");
     }
 }
