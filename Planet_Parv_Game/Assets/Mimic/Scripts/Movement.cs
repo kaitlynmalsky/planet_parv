@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,6 +25,7 @@ namespace MimicSpace
 
         public GameObject SpiderFirstEncounterCanvas;
         public Text SpiderFirstEncounterText;
+        public Light SpiderLight;
 
         private void Start()
         {
@@ -44,6 +46,8 @@ namespace MimicSpace
 
             if (following && player != null)
             {   
+                StartCoroutine(DestroySpiderLightAfterSomeTime());
+
                 //find velocity vector that moves towards player
                 Vector3 directionToPlayer = (player.position - transform.position).normalized;
                 velocity = Vector3.Lerp(velocity, directionToPlayer * speed * mimicSpeedMultiplier, velocityLerpCoef * Time.deltaTime);
@@ -103,8 +107,17 @@ namespace MimicSpace
         //coroutine for freezing the game when the spider explaination pops up
         IEnumerator FreezeGameAfterDelay()
         {
-            yield return new WaitForSecondsRealtime(1);
+            yield return new WaitForSecondsRealtime(0.5f); //wait for a little bit so the spider is more visible on screen
             Time.timeScale = 0;
+        }
+
+        //coroutine for destroying the point light after 5 seconds
+        IEnumerator DestroySpiderLightAfterSomeTime()
+        {   
+            Debug.Log("running coroutine");
+            yield return new WaitForSecondsRealtime(5f); //wait for a little bit so the player can see where the spider is
+            Debug.Log("wait over");
+            Destroy(SpiderLight);
         }
     }
 }
