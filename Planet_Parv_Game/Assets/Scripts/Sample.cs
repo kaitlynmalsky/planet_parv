@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Sample : MonoBehaviour
 {
     public Transform player;
-    public GameObject sample;
+    public List<GameObject> samples;
     public GameObject sampleCanvas;
     public Text sampleText;
     public RoverFollowsPlayer roverScript;
@@ -14,6 +14,7 @@ public class Sample : MonoBehaviour
     public Text DialogText;
 
     private float interactionRange = 10.0f;
+    public GameObject currentSample;
     
     void Start()
     {
@@ -30,10 +31,21 @@ public class Sample : MonoBehaviour
             RaycastHit hit;
             if (Physics.SphereCast(ray, 1.0f, out hit, interactionRange) && hit.collider.CompareTag("Sample"))
             {
+                GameObject hitSample = hit.collider.gameObject;
+                if (hitSample != currentSample) //if new sample, update currentSample
+                {
+                    currentSample = hitSample;
+                }
+
                 sampleCanvas.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Destroy(sample);
+                    //remove the currentSample from list and destroy it
+                    samples.Remove(currentSample);
+                    Destroy(currentSample);
+                    currentSample = null;
+
+                    //update UI
                     sampleCanvas.SetActive(false);
                     DialogText.text = "Drops some facts about the sample and about mars.";
                     DialogCanvas.SetActive(true);
@@ -42,11 +54,13 @@ public class Sample : MonoBehaviour
             else
             {
                 sampleCanvas.SetActive(false);
+                currentSample = null; //if not looking at a sample, there is no currentSample
             }
         }
         else
         {
             sampleCanvas.SetActive(false);
+            currentSample = null;
         }
     }
 }
