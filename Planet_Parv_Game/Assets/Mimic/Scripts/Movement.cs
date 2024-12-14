@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace MimicSpace
 {
@@ -21,6 +22,9 @@ namespace MimicSpace
         public MonoBehaviour astronautMovementScript; //reference to astronaut mover script
         public bool following; //true when mimic is following the player
 
+        public GameObject SpiderFirstEncounterCanvas;
+        public Text SpiderFirstEncounterText;
+
         private void Start()
         {
             myMimic = GetComponent<Mimic>();
@@ -30,9 +34,11 @@ namespace MimicSpace
         {
             //only make mimic active if player sees the mimic (it is on screen)
             Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
-            if (screenPoint.x >= 0 && screenPoint.x <= 1 && screenPoint.y >= 0 && screenPoint.y <= 1)
+            if (screenPoint.x >= 0 && screenPoint.x <= 1 && screenPoint.y >= 0 && screenPoint.y <= 1 && !following)
             {
+                Debug.Log("Saw Spider AHJH");
                 following = true;
+                SpiderFirstEncounterCanvas.SetActive(true);
             }
 
             if (following && player != null)
