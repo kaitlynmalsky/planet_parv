@@ -589,6 +589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mimic
       objectReference: {fileID: 0}
+    - target: {fileID: 8675915457954794080, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
+      propertyPath: m_TagString
+      value: Mimic
+      objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794082, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: m_LocalPosition.x
       value: 66.6
@@ -631,11 +635,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocity.x
-      value: -0.78014547
+      value: -0.5128513
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocity.z
-      value: 0.10577693
+      value: -0.8176683
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -802,12 +806,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1680213951}
-  sample: {fileID: 201634127}
+  samples: []
   sampleCanvas: {fileID: 1604060367}
   sampleText: {fileID: 1515993133}
   roverScript: {fileID: 1829800219}
   DialogCanvas: {fileID: 392292272}
   DialogText: {fileID: 51558270}
+  currentSample: {fileID: 0}
 --- !u!65 &201634129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2567,12 +2572,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1680213951}
-  sample: {fileID: 776502887}
+  samples: []
   sampleCanvas: {fileID: 1604060367}
   sampleText: {fileID: 1515993133}
   roverScript: {fileID: 1829800219}
   DialogCanvas: {fileID: 392292272}
   DialogText: {fileID: 51558270}
+  currentSample: {fileID: 0}
 --- !u!65 &776502889
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9579,7 +9585,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.09213972, g: 1, b: 0, a: 1}
   m_Intensity: 3
-  m_Range: 20
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,10 +16,10 @@ namespace MimicSpace
         public float velocityLerpCoef = 1f;
         Mimic myMimic;
 
-        //player for the mimic to follow around
-        public Transform player;
+        public Transform player; //player for the mimic to follow around
         public float mimicSpeedMultiplier = 0.3f; //how much slower the mimic is in comparison to the player
         public MonoBehaviour astronautMovementScript; //reference to astronaut mover script
+        public bool following; //true when mimic is following the player
 
         private void Start()
         {
@@ -27,7 +28,14 @@ namespace MimicSpace
 
         void Update()
         {
-            if (player != null)
+            //only make mimic active if player sees the mimic (it is on screen)
+            Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
+            if (screenPoint.x >= 0 && screenPoint.x <= 1 && screenPoint.y >= 0 && screenPoint.y <= 1)
+            {
+                following = true;
+            }
+
+            if (following && player != null)
             {   
                 //find velocity vector that moves towards player
                 Vector3 directionToPlayer = (player.position - transform.position).normalized;
