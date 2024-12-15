@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Rover
   - Sample
+  - Checkpoint
+  - ParkourZone
+  - Lava
   - Rock
   - Rocket
   layers:
