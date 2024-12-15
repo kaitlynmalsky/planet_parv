@@ -27,6 +27,7 @@ public class CharacterControllerScript : MonoBehaviour
             float x = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
 
+
             // rotate character
             float rotation = x * rotateSpeed * Time.deltaTime;
             transform.Rotate(0, rotation, 0);
@@ -53,6 +54,11 @@ public class CharacterControllerScript : MonoBehaviour
         }
 
 
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
 }

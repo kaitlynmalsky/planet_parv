@@ -30,7 +30,10 @@ public class RoverFollowsPlayer : MonoBehaviour
             // check if player is looking at rover
             Ray ray = new Ray(player.position, player.forward);
             RaycastHit hit;
-            if (Physics.SphereCast(ray, 1.0f, out hit, interactionRange) && hit.collider.CompareTag("Rover"))
+
+            // from kaitlyn: I changed this detection because trying to get the player to face the rover was annoying
+            // old condition: Physics.SphereCast(ray, 1.0f, out hit, interactionRange) && hit.collider.CompareTag("Rover")
+            if (Vector3.Distance(player.position, transform.position) < interactionRange/2) // interaction range was a bit too big
             {
                 RoverCanvas.SetActive(true);
                 // if player presses e, make the rover follow them
@@ -112,8 +115,8 @@ public class RoverFollowsPlayer : MonoBehaviour
 
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-                // move rover toward player
-                transform.position += transform.forward * speed * Time.deltaTime;
+                // move rover toward target direction
+                transform.position += speed * Time.deltaTime * transform.forward;
 
 
             }
@@ -123,24 +126,5 @@ public class RoverFollowsPlayer : MonoBehaviour
     public bool IsRoverFollowingPlayer()
     {
         return roverShouldFollowPlayer;
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        //Check for a match with the specified name on any GameObject that collides with your GameObject
-        if (collision.gameObject.name == "MyGameObjectName")
-        {
-            //If the GameObject's name matches the one you suggest, output this message in the console
-            Debug.Log("Do something here");
-        }
-
-        //Check for a match with the specific tag on any GameObject that collides with your GameObject
-        if (collision.gameObject.tag == "MyGameObjectTag")
-        {
-            //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Do something else here");
-        }
-
-        Debug.Log("collision detected");
     }
 }
