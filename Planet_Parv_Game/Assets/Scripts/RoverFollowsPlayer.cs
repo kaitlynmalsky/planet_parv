@@ -68,7 +68,6 @@ public class RoverFollowsPlayer : MonoBehaviour
                 // If the rover is looking at a rock, then find a better direction
                 if (Physics.SphereCast(rockRay, 1.0f, out RaycastHit rockHit, avoidRockRange) && rockHit.collider.CompareTag("Rock"))
                 {
-                    Debug.Log("rockRay has found a rock!");
                     Vector3 seekDirectionPos = transform.forward;
                     Vector3 seekDirectionNeg = transform.forward;
                     bool pathClear = false;

@@ -23,10 +23,10 @@ public class Rocket : MonoBehaviour
     {
         bool roverIsFollowingPlayer = roverScript != null && roverScript.IsRoverFollowingPlayer();
 
-        // check if player is close to rocket
-        if (Vector3.Distance(transform.position, player.position) < interactionRange)
+
+        Ray ray = new Ray(player.position, transform.position);
+        if (Vector3.Distance(transform.position, player.position) < interactionRange && !DialogCanvas.GetComponent<Canvas>().isActiveAndEnabled)
         {
-            Debug.Log("player is looking at rocket");
             RocketCanvas.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
