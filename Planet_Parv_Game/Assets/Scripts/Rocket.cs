@@ -52,7 +52,7 @@ public class Rocket : MonoBehaviour
                     }
                 } else
                 {
-                    DialogText.text = "Parv, thank you for collecting all these samples! I think that you're ready to go home!";
+                    DialogText.text = "Parv, thank you for collecting all these samples! I think you’re ready to go home. Fun fact before you leave: a day on Mars, called a sol, is just 37 minutes longer than a day on Earth. You’ve earned a good rest on Mars or back home!";
                     gameOver = true;
                 }
 
