@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Sample : MonoBehaviour
 {
     public Transform player;
-    public GameObject sample;
     public GameObject sampleCanvas;
     public Text sampleText;
     public RoverFollowsPlayer roverScript;
@@ -14,28 +13,36 @@ public class Sample : MonoBehaviour
     public Text DialogText;
 
     private float interactionRange = 10.0f;
+    private GameObject currentHoveredSample = null;
     
     void Start()
     {
         sampleCanvas.SetActive(false);
+        DialogCanvas.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        currentHoveredSample = null;
+
         if (roverScript != null && roverScript.IsRoverFollowingPlayer())
         {
-            // check if player is looking at sample
             Ray ray = new Ray(player.position, player.forward);
             RaycastHit hit;
-            if (Physics.SphereCast(ray, 1.0f, out hit, interactionRange) && hit.collider.CompareTag("Sample"))
+            
+            if (Physics.SphereCast(ray, 1.5f, out hit, interactionRange) && hit.collider.CompareTag("Sample"))
             {
+                currentHoveredSample = hit.collider.gameObject;
+                
                 sampleCanvas.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.E))
+                
+                if (Input.GetKeyDown(KeyCode.E) && currentHoveredSample != null)
                 {
-                    Destroy(sample);
+                    Destroy(currentHoveredSample);
+                    
                     sampleCanvas.SetActive(false);
-                    DialogText.text = "Drops some facts about the sample and about mars.";
+                    
+                    DialogText.text = "Drops some facts about the sample and about Mars.";
                     DialogCanvas.SetActive(true);
                 }
             }
