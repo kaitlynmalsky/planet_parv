@@ -40,7 +40,7 @@ Here's a summary of what each of us contributed:
 
 **Kelly**:
 * Spider movement
-* Spider lighting
+* Spider/sample lighting
 * Spider interaction
 
 ## Assets
