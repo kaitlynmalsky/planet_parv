@@ -31,8 +31,8 @@ public class RoverFollowsPlayer : MonoBehaviour
         if (!roverShouldFollowPlayer)
         {
             // check if player is looking at rover
-            Ray ray = new Ray(player.position, player.forward);
-            RaycastHit hit;
+            //Ray ray = new Ray(player.position, player.forward);
+            //RaycastHit hit;
 
             // from kaitlyn: I changed this detection because trying to get the player to face the rover was annoying
             // old condition: Physics.SphereCast(ray, 1.0f, out hit, interactionRange) && hit.collider.CompareTag("Rover")
