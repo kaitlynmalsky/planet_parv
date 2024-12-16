@@ -42,6 +42,11 @@ public class Rocket : MonoBehaviour
                     DialogText.text = roverIsFollowingPlayer
                         ? "Parv, you can't go yet! There are still " + samplesRemaining + " samples to collect!"
                         : "*You have a feeling that you should find the rover first.*";
+                    GameObject[] samples = GameObject.FindGameObjectsWithTag("Sample");
+                    foreach (GameObject sample in samples)
+                    {
+                        Debug.Log(sample);
+                    }
                 } else
                 {
                     DialogText.text = "Parv, thank you for collecting all these samples! I think that you're ready to go home!";
@@ -63,7 +68,7 @@ public class Rocket : MonoBehaviour
     int getNumSamples()
     {
         int sampleTagCount = GameObject.FindGameObjectsWithTag("Sample").Length;
-        if (captureSpiderScript.destroyedSpider) { sampleTagCount++; }
+        if (!captureSpiderScript.destroyedSpider) { sampleTagCount++; }
         return sampleTagCount;
     }
 
