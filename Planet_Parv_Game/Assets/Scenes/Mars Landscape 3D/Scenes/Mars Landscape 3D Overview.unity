@@ -3331,6 +3331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044313492ec6d4887bd619cef1aa7a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isParkour: 0
 --- !u!65 &280151731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3719,8 +3720,9 @@ MonoBehaviour:
   fireballPrefab: {fileID: 8620931804385897893, guid: e2711168e554edb43baab47d27923716, type: 3}
   fireballSpawnPoint: {fileID: 1707030859}
   UFOSample: {fileID: 1112655275}
-  DialogCanvas: {fileID: 0}
-  DialogText: {fileID: 0}
+  DialogCanvas: {fileID: 392292272}
+  DialogText: {fileID: 51558270}
+  rover: {fileID: 1829800219}
 --- !u!82 &308200530
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16299,6 +16301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044313492ec6d4887bd619cef1aa7a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isParkour: 0
 --- !u!65 &1114828272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18434,6 +18437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044313492ec6d4887bd619cef1aa7a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isParkour: 0
 --- !u!1001 &1397848765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18831,6 +18835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044313492ec6d4887bd619cef1aa7a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isParkour: 0
 --- !u!65 &1488237937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20489,6 +20494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044313492ec6d4887bd619cef1aa7a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isParkour: 0
 --- !u!136 &1680213956
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22749,6 +22755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044313492ec6d4887bd619cef1aa7a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isParkour: 0
 --- !u!65 &1905136993
 BoxCollider:
   m_ObjectHideFlags: 0

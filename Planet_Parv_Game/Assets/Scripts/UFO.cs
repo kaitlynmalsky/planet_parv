@@ -13,6 +13,8 @@ public class UFO : MonoBehaviour
     public GameObject UFOSample;
     public GameObject DialogCanvas;
     public Text DialogText;
+    public RoverFollowsPlayer rover;
+    private AudioSource roverTalkSFX;
 
     private NavMeshAgent agent;
     private int currWaypoint = 0;
@@ -34,6 +36,7 @@ public class UFO : MonoBehaviour
         prevPos = astronaut.position;
         SetUFOPatrolDestination();
         shootFireBallSFX = GetComponent<AudioSource>();
+        roverTalkSFX = rover.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,10 +45,11 @@ public class UFO : MonoBehaviour
         // Freeze the game and have dialog describing your mission when you are close to the UFO and see it.
         if(!seenUFO && Vector3.Distance(astronaut.position, transform.position) <= 55.0f)
         {
-            DialogText.text = "Look! The Mars UFO is guarding the sample. If it sees you, it will attack with fireballs. Be quick and stealthy! Fun fact: Mars has a canyon called Valles Marineris that’s over 10 times longer than the Grand Canyon—better not fall into one while running from the UFO!";
+            DialogText.text = "Look! The Mars UFO is guarding the sample. If it sees you, it will attack with fireballs. Be quick and stealthy! Fun fact: Mars has a canyon called Valles Marineris that's over 10 times longer than the Grand Canyon! Better not fall into one while running from the UFO!";
             DialogCanvas.SetActive(true);
             Time.timeScale = 0;
             seenUFO = true;
+            roverTalkSFX.Play();
         }
 
         // after picking up the sample, the UFO no longer attacks and chases the player
