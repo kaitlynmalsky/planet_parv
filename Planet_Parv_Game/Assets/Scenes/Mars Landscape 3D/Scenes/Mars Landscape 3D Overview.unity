@@ -3637,6 +3637,7 @@ MonoBehaviour:
   astronaut: {fileID: 1680213951}
   fireballPrefab: {fileID: 8620931804385897893, guid: e2711168e554edb43baab47d27923716, type: 3}
   fireballSpawnPoint: {fileID: 1707030859}
+  UFOSample: {fileID: 1112655275}
 --- !u!4 &309764940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4680207322652306, guid: b3760008fe34d4e339d2e0c241afdadb, type: 3}
@@ -3835,7 +3836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 371113297632144545, guid: fb9f44026c6cb46d985f0e74b3ac73fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 371113297632144545, guid: fb9f44026c6cb46d985f0e74b3ac73fe, type: 3}
       propertyPath: m_LocalPosition.z
