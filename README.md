@@ -24,7 +24,8 @@ Here's a summary of what each of us contributed:
 **Ashley**:
 * Rover player following
 * Dialogue and start screen
-* UFO patrol mode 
+* UFO patrol mode
+* UFO Chase player mode
 
 **Kaitlyn**:
 * Added rocket
