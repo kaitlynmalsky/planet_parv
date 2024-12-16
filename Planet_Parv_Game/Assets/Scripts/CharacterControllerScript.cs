@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterControllerScript : MonoBehaviour
 {
     public GameObject DialogCanvas;
+    public GameObject PauseCanvas;
     
     private float movementSpeed = 5.0f;
     private float rotateSpeed = 100.0f;
@@ -17,10 +18,12 @@ public class CharacterControllerScript : MonoBehaviour
     private Vector3 verticalVelocity;
     public bool isJumping = false;
 
+    private bool isPaused = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        PauseCanvas.SetActive(false);
         controller = GetComponent<CharacterController>();
         animation_controller = GetComponent<Animator>();
     }
@@ -28,8 +31,13 @@ public class CharacterControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if the player presses esc, pause the game
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseOrUnpauseGame();
+        }
         // player cannot move if the dialog is active
-        if (!DialogCanvas.activeSelf)
+        if (!DialogCanvas.activeSelf && !isPaused)
         {
             float x = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
@@ -90,4 +98,18 @@ public class CharacterControllerScript : MonoBehaviour
         
     }
 
+    void PauseOrUnpauseGame()
+    {
+        isPaused = !isPaused;
+        if (isPaused)
+        {
+            PauseCanvas.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            PauseCanvas.SetActive(false);
+            Time.timeScale = 1;
+        }
+    }
 }
