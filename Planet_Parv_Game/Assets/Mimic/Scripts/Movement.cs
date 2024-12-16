@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace MimicSpace
 {
@@ -15,10 +18,15 @@ namespace MimicSpace
         public float velocityLerpCoef = 1f;
         Mimic myMimic;
 
-        //player for the mimic to follow around
-        public Transform player;
-        public float mimicSpeedMultiplier = 0.3f; //how much slower the mimic is in comparison to the player
+        public Transform player; //player for the mimic to follow around
+        public float mimicSpeedMultiplier = 0.5f; //how much slower the mimic is in comparison to the player
         public MonoBehaviour astronautMovementScript; //reference to astronaut mover script
+        public bool following; //true when mimic is following the player //you should probably private this too
+        public CharacterController characterController;
+
+        public GameObject SpiderFirstEncounterCanvas;
+        public Text SpiderFirstEncounterText;
+        public Light SpiderLight;
 
         private void Start()
         {
@@ -27,8 +35,24 @@ namespace MimicSpace
 
         void Update()
         {
-            if (player != null)
+            //check if the player is within range
+            if (player != null && Vector3.Distance(transform.position, player.position) <= 30f)
+            {
+                //only make mimic active if the player is close and can see it (it is on screen)
+                Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
+                if (screenPoint.x >= 0 && screenPoint.x <= 1 && screenPoint.y >= 0 && screenPoint.y <= 1 && !following)
+                {
+                    Debug.Log("Saw Spider AHJH");
+                    following = true;
+                    SpiderFirstEncounterCanvas.SetActive(true);
+                    StartCoroutine(FreezeGameAfterDelay());
+                }
+            }
+
+            if (following && player != null)
             {   
+                StartCoroutine(DestroySpiderLightAfterSomeTime());
+
                 //find velocity vector that moves towards player
                 Vector3 directionToPlayer = (player.position - transform.position).normalized;
                 velocity = Vector3.Lerp(velocity, directionToPlayer * speed * mimicSpeedMultiplier, velocityLerpCoef * Time.deltaTime);
@@ -46,9 +70,8 @@ namespace MimicSpace
                 //lerp to smooth transition
                 transform.position = Vector3.Lerp(transform.position, destHeight, velocityLerpCoef * Time.deltaTime);
 
-                //if mimic reaches player, destroy it and deal damage (TODO)
-                //i set to 0.7 because the distance is never < 0.6 because of the height of the mimic
-                if (Vector3.Distance(transform.position, player.position) <= 0.7f)
+                //if mimic reaches player, attack
+                if (Vector3.Distance(transform.position, player.position) <= 2f)
                 {
                     Debug.Log("DIE");
                     //cute lil attack animation (just bounce up and down lol)
@@ -71,18 +94,40 @@ namespace MimicSpace
 
             //bouncy
             for (float t = 0; t < bounceDuration; t += Time.deltaTime) {
+                Debug.Log("bouncy");
                 float lerpValue = Mathf.PingPong(t * 10f, bounceHeight); 
                 transform.position = new Vector3(originalPosition.x, originalPosition.y + lerpValue, originalPosition.z);
                 yield return null;
             }
 
-            //destroy the mimic after attack
-            Destroy(gameObject);
+            //teleport back to spawn after attack
+            Vector3 spawn = new Vector3(0f,7f,0f);
 
-            //unfreeze the player after the attack
-            if (astronautMovementScript != null) {
+            if (characterController != null) {
+                characterController.enabled = false;
+                characterController.transform.position = spawn;
+                characterController.enabled = true;
+                characterController.Move(Vector3.zero);
+            }
+
+            if (astronautMovementScript != null)
+            {
                 astronautMovementScript.enabled = true;
             }
+        }
+
+        //coroutine for freezing the game when the spider explaination pops up
+        IEnumerator FreezeGameAfterDelay()
+        {
+            yield return new WaitForSecondsRealtime(0.5f); //wait for a little bit so the spider is more visible on screen
+            Time.timeScale = 0;
+        }
+
+        //coroutine for destroying the point light after 5 seconds
+        IEnumerator DestroySpiderLightAfterSomeTime()
+        {   
+            yield return new WaitForSecondsRealtime(5f); //wait for a little bit so the player can see where the spider is
+            Destroy(SpiderLight);
         }
     }
 }

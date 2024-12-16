@@ -33,7 +33,6 @@ public class Sample : MonoBehaviour
             if (Physics.SphereCast(ray, 1.5f, out hit, interactionRange) && hit.collider.CompareTag("Sample"))
             {
                 currentHoveredSample = hit.collider.gameObject;
-                
                 sampleCanvas.SetActive(true);
                 
                 if (Input.GetKeyDown(KeyCode.E) && currentHoveredSample != null)

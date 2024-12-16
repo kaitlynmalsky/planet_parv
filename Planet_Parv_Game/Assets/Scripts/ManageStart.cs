@@ -7,11 +7,13 @@ public class ManageStart : MonoBehaviour
 {
     public GameObject StartCanvas;
     public GameObject DialogCanvas;
+    public GameObject SpiderFirstEncounterCanvas;
     public Text DialogText;
     // Start is called before the first frame update
     void Start()
     {
         DialogCanvas.SetActive(false);
+        SpiderFirstEncounterCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,5 +32,7 @@ public class ManageStart : MonoBehaviour
     public void HideDialog()
     {
         DialogCanvas.SetActive(false);
+        SpiderFirstEncounterCanvas.SetActive(false);
+        Time.timeScale = 1;
     }
 }
