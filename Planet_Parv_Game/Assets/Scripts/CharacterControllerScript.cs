@@ -45,38 +45,24 @@ public class CharacterControllerScript : MonoBehaviour
             Vector3 moveDir = transform.forward * z * movementSpeed;
 
             // Jumping and Gravity Handling
-            if (controller.isGrounded)
+            if (controller.isGrounded || !isJumping)
             {
                 isJumping = false;
-                verticalVelocity.y = -0.5f; // Small downward force to keep character grounded
-
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     verticalVelocity.y = jumpForce;
                     isJumping = true;
                 }
             }
-            else
-            {
-                // Apply gravity
-                verticalVelocity.y -= gravity * Time.deltaTime;
-            }
+
+            // Apply gravity - always
+            verticalVelocity.y -= gravity * Time.deltaTime;
 
             // Combine horizontal and vertical movement
             moveDir.y = verticalVelocity.y;
 
             // Move the character
             controller.Move(moveDir * Time.deltaTime);
-
-            /*
-            // move character
-            Vector3 moveDir = transform.forward * z;
-            if (!controller.isGrounded)
-            {
-                moveDir.y += -gravity * Time.deltaTime;
-            }
-            controller.Move(movementSpeed * Time.deltaTime * moveDir);
-            */
 
             float velocity_no_y = new Vector3(controller.velocity.x, 0, controller.velocity.z).magnitude;
             //Debug.Log(velocity_no_y);

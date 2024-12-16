@@ -34,6 +34,10 @@ public class Rocket : MonoBehaviour
                 DialogText.text = roverIsFollowingPlayer
                     ? "Parv, you can't go yet! There are still samples to collect!"
                     : "*You have a feeling that you should find the rover first.*";
+                if (roverIsFollowingPlayer)
+                {
+                    roverScript.roverTalk.Play();
+                }
             }
         } else
         {

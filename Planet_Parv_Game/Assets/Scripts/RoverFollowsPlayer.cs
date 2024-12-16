@@ -10,6 +10,8 @@ public class RoverFollowsPlayer : MonoBehaviour
     public Text StoryText;
     public GameObject DialogCanvas;
     public Text DialogText;
+    public AudioSource roverTalk;
+
 
     private float speed = 5.0f;
     private float stopDistance = 2.5f;
@@ -21,6 +23,7 @@ public class RoverFollowsPlayer : MonoBehaviour
     void Start()
     {
         RoverCanvas.SetActive(false);
+        roverTalk = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -42,6 +45,7 @@ public class RoverFollowsPlayer : MonoBehaviour
                     roverShouldFollowPlayer = true;
                     DialogText.text = "Hi Parv, It's so nice to meet you! (Drop a mars fact). I need your help collecting samples. Let's take a look around the planet for odd shaped rocks.";
                     DialogCanvas.SetActive(true);
+                    roverTalk.Play();
                 }
             }
             else

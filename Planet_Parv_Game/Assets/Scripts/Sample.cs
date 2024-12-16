@@ -14,11 +14,13 @@ public class Sample : MonoBehaviour
 
     private float interactionRange = 10.0f;
     private GameObject currentHoveredSample = null;
+    private AudioSource gotSampleSFX;
     
     void Start()
     {
         sampleCanvas.SetActive(false);
         DialogCanvas.SetActive(false);
+        gotSampleSFX = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -40,6 +42,7 @@ public class Sample : MonoBehaviour
                     Destroy(currentHoveredSample);
                     
                     sampleCanvas.SetActive(false);
+                    gotSampleSFX.Play();
                     
                     DialogText.text = "Drops some facts about the sample and about Mars.";
                     DialogCanvas.SetActive(true);
