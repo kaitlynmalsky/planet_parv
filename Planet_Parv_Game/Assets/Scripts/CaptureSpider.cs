@@ -14,7 +14,7 @@ public class CaptureSpider : MonoBehaviour
 
     private AudioSource doorCloseSFX;
 
-    private bool destroyedSpider; // prevents destroying spider when it was already destroyed. please have mercy.
+    public bool destroyedSpider; // prevents destroying spider when it was already destroyed. please have mercy.
 
     //public Light greenSampleLight; //appears when you can collect the spider
 

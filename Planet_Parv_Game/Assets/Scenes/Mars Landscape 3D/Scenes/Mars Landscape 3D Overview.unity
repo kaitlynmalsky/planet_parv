@@ -4503,6 +4503,7 @@ MonoBehaviour:
   spiderSample: {fileID: 1360694063}
   spiderMovementScript: {fileID: 316909876}
   door: {fileID: 1720086941}
+  destroyedSpider: 0
 --- !u!114 &375177736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7415,7 +7416,7 @@ GameObject:
   - component: {fileID: 745583587}
   m_Layer: 0
   m_Name: Point Light
-  m_TagString: Sample
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8428,6 +8429,7 @@ MonoBehaviour:
   RocketCanvas: {fileID: 1260505707}
   RocketText: {fileID: 1747065485}
   roverScript: {fileID: 1829800219}
+  captureSpiderScript: {fileID: 375177730}
 --- !u!64 &808897399
 MeshCollider:
   m_ObjectHideFlags: 0

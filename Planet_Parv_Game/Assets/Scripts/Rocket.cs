@@ -12,15 +12,20 @@ public class Rocket : MonoBehaviour
     public Text RocketText;
     public RoverFollowsPlayer roverScript;
     private float interactionRange = 5.0f;
+    private int samplesRemaining;
+    public CaptureSpider captureSpiderScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        samplesRemaining = getNumSamples();
+        Debug.Log(samplesRemaining + " samples are left");
     }
 
     // Update is called once per frame
     void Update()
     {
+        samplesRemaining = getNumSamples();
         bool roverIsFollowingPlayer = roverScript != null && roverScript.IsRoverFollowingPlayer();
 
 
@@ -31,9 +36,18 @@ public class Rocket : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 DialogCanvas.SetActive(true);
-                DialogText.text = roverIsFollowingPlayer
-                    ? "Parv, you can't go yet! There are still samples to collect!"
-                    : "*You have a feeling that you should find the rover first.*";
+
+                if (samplesRemaining > 0)
+                {
+                    DialogText.text = roverIsFollowingPlayer
+                        ? "Parv, you can't go yet! There are still " + samplesRemaining + " samples to collect!"
+                        : "*You have a feeling that you should find the rover first.*";
+                } else
+                {
+                    DialogText.text = "Parv, thank you for collecting all these samples! I think that you're ready to go home!";
+                    EndGame();
+                }
+
                 if (roverIsFollowingPlayer)
                 {
                     roverScript.roverTalk.Play();
@@ -44,5 +58,17 @@ public class Rocket : MonoBehaviour
             RocketCanvas.SetActive(false);
         }
 
+    }
+
+    int getNumSamples()
+    {
+        int sampleTagCount = GameObject.FindGameObjectsWithTag("Sample").Length;
+        if (captureSpiderScript.destroyedSpider) { sampleTagCount++; }
+        return sampleTagCount;
+    }
+
+    void EndGame()
+    {
+        Debug.Log("This is a placeholder. Everything needed to end the game should go here.");
     }
 }
