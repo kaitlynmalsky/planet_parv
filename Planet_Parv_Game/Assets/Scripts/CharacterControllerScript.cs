@@ -55,6 +55,12 @@ public class CharacterControllerScript : MonoBehaviour
                 }
             }
 
+            // prevent bounce, no bouncy (bad)
+            if (!isJumping && verticalVelocity.y > 0) 
+            {
+                verticalVelocity.y = 0;
+            }
+
             // Apply gravity - always
             verticalVelocity.y -= gravity * Time.deltaTime;
 

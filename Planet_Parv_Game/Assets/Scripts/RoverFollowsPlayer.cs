@@ -108,6 +108,7 @@ public class RoverFollowsPlayer : MonoBehaviour
                         ? Quaternion.Euler(seekDirectionPos.x, seekDirectionPos.y, seekDirectionPos.z)
                         : Quaternion.Euler(seekDirectionNeg.x, seekDirectionNeg.y, seekDirectionNeg.z);
                 }
+
                 // If the rover isn't looking at a rock, target the player
                 else
                 {

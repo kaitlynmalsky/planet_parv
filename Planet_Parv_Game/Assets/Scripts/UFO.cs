@@ -21,6 +21,7 @@ public class UFO : MonoBehaviour
     private float lastFireTime = 0;
     private Vector3 prevPos;
     private bool shouldPredictPlayerPos = false;
+    private AudioSource shootFireBallSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class UFO : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         prevPos = astronaut.position;
         SetUFOPatrolDestination();
+        shootFireBallSFX = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -64,6 +66,7 @@ public class UFO : MonoBehaviour
             // Shoot fireball if cooldown time is over
             if (Time.time > lastFireTime + fireballCooldown)
             {
+                shootFireBallSFX.Play();
                 if (shouldPredictPlayerPos)
                 {
                     ShootFireballAccurately();
