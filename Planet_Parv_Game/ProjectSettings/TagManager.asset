@@ -11,6 +11,7 @@ TagManager:
   - Lava
   - Rock
   - Rocket
+  - TeleHome
   layers:
   - Default
   - TransparentFX

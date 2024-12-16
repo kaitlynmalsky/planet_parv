@@ -75,6 +75,22 @@ public class ParkourSpawn : MonoBehaviour
             Debug.Log("IM IN LAVAAAA");
             teleportToSpawn();
         }
+        
+        if(other.tag == "TeleHome") {
+            
+            Vector3 tmpPos = new Vector3(-67.5f,19.5f,13.5f);
+
+            if (characterController != null) {
+
+                characterController.enabled = false;
+                transform.position = tmpPos;
+                characterController.enabled = true;
+            }
+
+            else {
+                transform.position = tmpPos;
+            }
+        }
 
     }
 
