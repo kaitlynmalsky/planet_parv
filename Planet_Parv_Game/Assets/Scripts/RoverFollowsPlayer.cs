@@ -43,7 +43,7 @@ public class RoverFollowsPlayer : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     roverShouldFollowPlayer = true;
-                    DialogText.text = "Hi Parv, It's so nice to meet you! (Drop a mars fact). I need your help collecting samples. Let's take a look around the planet for odd shaped rocks.";
+                    DialogText.text = "Hi Parv, It's so nice to meet you! Welcome to Mars, the fourth planet from the sun in our solar system. I need your help collecting samples. Let's take a look around the planet for odd shaped rocks.";
                     DialogCanvas.SetActive(true);
                     roverTalk.Play();
                 }
