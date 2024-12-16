@@ -10,6 +10,7 @@ public class CaptureSpider : MonoBehaviour
     public GameObject spider;
     public GameObject spiderSample;
     public MonoBehaviour spiderMovementScript;
+    public GameObject door;
 
     private AudioSource doorCloseSFX;
 
@@ -22,7 +23,8 @@ public class CaptureSpider : MonoBehaviour
         //greenSampleLight.enabled = false;
         spiderSample.SetActive(false);
         destroyedSpider = false;
-        doorCloseSFX = GetComponent<AudioSource>();
+        
+        doorCloseSFX = door.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -34,6 +36,7 @@ public class CaptureSpider : MonoBehaviour
             spiderSample.SetActive(true);
             destroyedSpider = true;
             doorCloseSFX.Play();
+            cage.tag = "Sample";
         }
     }
 }
