@@ -3719,6 +3719,8 @@ MonoBehaviour:
   fireballPrefab: {fileID: 8620931804385897893, guid: e2711168e554edb43baab47d27923716, type: 3}
   fireballSpawnPoint: {fileID: 1707030859}
   UFOSample: {fileID: 1112655275}
+  DialogCanvas: {fileID: 0}
+  DialogText: {fileID: 0}
 --- !u!82 &308200530
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5047,6 +5049,7 @@ MonoBehaviour:
   DialogCanvas: {fileID: 0}
   animation_controller: {fileID: 0}
   jumpForce: 10
+  isJumping: 0
 --- !u!143 &391605706
 CharacterController:
   m_ObjectHideFlags: 0
@@ -20447,6 +20450,7 @@ MonoBehaviour:
   DialogCanvas: {fileID: 392292272}
   animation_controller: {fileID: 0}
   jumpForce: 10
+  isJumping: 0
 --- !u!143 &1680213953
 CharacterController:
   m_ObjectHideFlags: 0
@@ -21963,6 +21967,8 @@ MonoBehaviour:
   DialogCanvas: {fileID: 392292272}
   DialogText: {fileID: 51558270}
   roverTalk: {fileID: 0}
+  characterControllerScript: {fileID: 1680213952}
+  parkourSpawnScript: {fileID: 1114828271}
 --- !u!65 &1829800221
 BoxCollider:
   m_ObjectHideFlags: 0

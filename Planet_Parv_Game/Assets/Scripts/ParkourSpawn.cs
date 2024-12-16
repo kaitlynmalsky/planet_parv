@@ -7,7 +7,7 @@ public class ParkourSpawn : MonoBehaviour
     private CharacterController characterController;
 
     //checks if we are in the parkour zone.
-    private bool isParkour; 
+    public bool isParkour; 
     private int currCheckPointNumber; 
 
 

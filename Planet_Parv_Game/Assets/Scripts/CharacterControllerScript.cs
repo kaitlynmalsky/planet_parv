@@ -15,7 +15,7 @@ public class CharacterControllerScript : MonoBehaviour
     //Features I added:
     public float jumpForce = 15.0f;
     private Vector3 verticalVelocity;
-    private bool isJumping = false;
+    public bool isJumping = false;
 
 
     // Start is called before the first frame update

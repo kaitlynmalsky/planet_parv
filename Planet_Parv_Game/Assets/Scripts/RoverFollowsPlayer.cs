@@ -11,6 +11,8 @@ public class RoverFollowsPlayer : MonoBehaviour
     public GameObject DialogCanvas;
     public Text DialogText;
     public AudioSource roverTalk;
+    public CharacterControllerScript characterControllerScript;
+    public ParkourSpawn parkourSpawnScript;
 
 
     private float speed = 5.0f;
@@ -54,7 +56,7 @@ public class RoverFollowsPlayer : MonoBehaviour
             }
         }
 
-        if (roverShouldFollowPlayer)
+        if (roverShouldFollowPlayer && !characterControllerScript.isJumping && !parkourSpawnScript.isParkour)
         {
             RoverCanvas.SetActive(false);
             float distToPlayer = Vector3.Distance(transform.position, player.position);
