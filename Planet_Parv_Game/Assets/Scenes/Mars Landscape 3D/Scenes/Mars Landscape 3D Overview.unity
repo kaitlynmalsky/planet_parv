@@ -1739,6 +1739,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1955491389}
     m_Modifications:
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
+      propertyPath: rover
+      value: 
+      objectReference: {fileID: 1829800217}
+    - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1680213951}
@@ -1808,11 +1812,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocity.x
-      value: -0.15181808
+      value: -0.30396044
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocity.z
-      value: -0.22302034
+      value: -0.34803292
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4516,7 +4520,7 @@ MonoBehaviour:
   sampleText: {fileID: 51558270}
   roverScript: {fileID: 1829800219}
   DialogCanvas: {fileID: 392292272}
-  DialogText: {fileID: 0}
+  DialogText: {fileID: 51558270}
 --- !u!65 &375177737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22104,11 +22108,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocity.x
-      value: 0.1833859
+      value: -0.4608303
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocity.z
-      value: 0.25754163
+      value: -0.34993616
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}

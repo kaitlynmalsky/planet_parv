@@ -23,6 +23,8 @@ namespace MimicSpace
         public MonoBehaviour astronautMovementScript; //reference to astronaut mover script
         public bool following; //true when mimic is following the player //you should probably private this too
         public CharacterController characterController;
+        public GameObject rover;
+        private AudioSource roverTalkSFX;
 
         public GameObject SpiderFirstEncounterCanvas;
         public Text SpiderFirstEncounterText;
@@ -31,6 +33,7 @@ namespace MimicSpace
         private void Start()
         {
             myMimic = GetComponent<Mimic>();
+            roverTalkSFX = rover.GetComponent<AudioSource>();
         }
 
         void Update()
@@ -45,6 +48,7 @@ namespace MimicSpace
                     Debug.Log("Saw Spider AHJH");
                     following = true;
                     SpiderFirstEncounterCanvas.SetActive(true);
+                    roverTalkSFX.Play();
                     StartCoroutine(FreezeGameAfterDelay());
                 }
             }
