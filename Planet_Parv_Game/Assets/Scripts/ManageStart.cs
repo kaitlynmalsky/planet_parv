@@ -9,6 +9,8 @@ public class ManageStart : MonoBehaviour
     public GameObject DialogCanvas;
     public GameObject SpiderFirstEncounterCanvas;
     public Text DialogText;
+    public Rocket rocketScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,10 @@ public class ManageStart : MonoBehaviour
     {
         DialogCanvas.SetActive(false);
         SpiderFirstEncounterCanvas.SetActive(false);
+        if (rocketScript.gameOver)
+        {
+            rocketScript.EndGame();
+        }
         Time.timeScale = 1;
     }
 }
