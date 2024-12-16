@@ -15,7 +15,13 @@ public class Sample : MonoBehaviour
     private float interactionRange = 10.0f;
     private GameObject currentHoveredSample = null;
     private AudioSource gotSampleSFX;
-    
+    private List<string> sampleTextOptions = new List<string> {
+        "This rock contains traces of minerals that could only form in the presence of water. Millions or even billions of years ago, Mars had liquid water flowing on its surface, creating rivers, lakes, and possibly even oceans.",
+        "This rock is volcanic, formed from ancient lava flows. Mars’ volcanoes are some of the largest in the solar system. Olympus Mons is about three times the height of Mount Everest and so wide it could cover all of Arizona. Don't worry, they have been dormant for millions of years.",
+        "The soil on this rock contains perchlorates—a type of salt that’s toxic to humans. It’s a reminder of how hostile this planet is. But it also has potential: scientists think we might one day use these salts to extract oxygen or as part of fuel production.",
+        "These crystalline structures hint at prolonged exposure to cosmic radiation. Without a thick atmosphere or magnetic field, Mars is constantly bombarded by radiation from space. It’s a reminder of the risks we take exploring this planet."
+    };
+
     void Start()
     {
         sampleCanvas.SetActive(false);
@@ -44,7 +50,7 @@ public class Sample : MonoBehaviour
                     sampleCanvas.SetActive(false);
                     gotSampleSFX.Play();
                     
-                    DialogText.text = "Drops some facts about the sample and about Mars.";
+                    DialogText.text = PickRandomDialog();
                     DialogCanvas.SetActive(true);
                 }
             }
@@ -57,5 +63,13 @@ public class Sample : MonoBehaviour
         {
             sampleCanvas.SetActive(false);
         }
+    }
+
+    string PickRandomDialog()
+    {
+        int randomIdx = Random.Range(0, sampleTextOptions.Count);
+        string sampleTextString = sampleTextOptions[randomIdx];
+        sampleTextOptions.RemoveAt(randomIdx);
+        return sampleTextString;
     }
 }
