@@ -26,6 +26,8 @@ Here's a summary of what each of us contributed:
 * Dialogue and start screen
 * UFO patrol mode
 * UFO Chase player mode
+* UFO Predictive attack mode
+* Pausing
 
 **Kaitlyn**:
 * Added rocket
