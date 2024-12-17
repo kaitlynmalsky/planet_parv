@@ -17,9 +17,10 @@ Here's a summary of what each of us contributed:
 
 **Sabrina**:
 * Sample placement
-* Projectile AI
+* Fireball Projectiles
 * Sample UI
 * Rock-player collisions
+* UFO attack mode
 
 **Ashley**:
 * Rover player following
@@ -27,6 +28,7 @@ Here's a summary of what each of us contributed:
 * UFO patrol mode
 * UFO Chase player mode
 * UFO Predictive attack mode
+* UFO respawn point
 * Pausing
 
 **Kaitlyn**:
