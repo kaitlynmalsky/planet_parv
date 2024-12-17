@@ -32,10 +32,11 @@ Here's a summary of what each of us contributed:
 * Pausing
 
 **Kaitlyn**:
-* Added rocket
+* Rocket interaction and win condition
 * Character animation
 * Rover collisions + rock avoidance
 * Added sound effects
+* Game end UI
 
 **Ricky**:
 * Character jumping
